@@ -1,96 +1,102 @@
 body {
-    background: #972c2c;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    background: #972c2c; /* Sets the background color to a dark red */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the font family for the body */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    margin: 0; /* Removes default margin */
 }
 
 #weather-container {
-    background: rgba(255, 255, 255, 0.3);
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    max-width: 800px; /* Sets the maximum width */
+    padding: 20px; /* Adds padding inside the container */
+    border-radius: 15px; /* Rounds the corners */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Adds a semi-transparent border */
+    text-align: center; /* Centers text */
 }
 
 h2, label, p {
-    color: #fff;
-    margin: 8px 0;
+    color: #fff; /* Sets text color to white */
+    margin: 8px 0; /* Adds vertical margins */
 }
 
-input {
-    width: calc(100% - 16px);
-    padding: 8px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 1px solid white;
-    margin-top: 20px;
+#search-bar {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges items in a column */
+    align-items: center; /* Centers items horizontally */
+    gap: 10px; /* Adds a gap between items */
+    margin-bottom: 20px; /* Adds margin at the bottom */
 }
 
-button {
-    background: #000000;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 100px;
-    font-size: 15px;
+#search-bar input {
+    width: calc(100% - 16px); /* Sets the width to 100% minus 16px */
+    padding: 8px; /* Adds padding inside the input */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    border-radius: 10px; /* Rounds the corners */
+    border: 1px solid white; /* Sets a white border */
 }
 
-button:hover {
-    background: #d74848;
+#search-bar button {
+    background: #000000; /* Sets the background color to black */
+    color: white; /* Sets the text color to white */
+    padding: 10px; /* Adds padding inside the button */
+    border: none; /* Removes the default border */
+    border-radius: 10px; /* Rounds the corners */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    margin-top: 20px; /* Adds margin at the top */
+    width: 100px; /* Sets the width */
+    font-size: 15px; /* Sets the font size */
+}
+
+#search-bar button:hover {
+    background: #d74848; /* Changes the background color on hover */
 }
 
 #temp-div p {
-    font-size: 60px;
-    margin-top: -30px;
+    font-size: 60px; /* Sets the font size */
+    margin-top: -30px; /* Adds negative margin at the top */
 }
 
 #weather-info {
-    font-size: 20px;
+    font-size: 20px; /* Sets the font size */
 }
 
 #weather-icon {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 10px; 
-    margin-bottom: 0;
-    display: none;
+    width: 200px; /* Sets the width */
+    height: 200px; /* Sets the height */
+    margin: 0 auto 10px; /* Centers the icon and adds margin at the bottom */
+    display: none; /* Hides the icon initially */
 }
 
 #hourly-forecast {
-    margin-top: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 50px; /* Adds margin at the top */
+    overflow-x: auto; /* Allows horizontal scrolling */
+    white-space: nowrap; /* Prevents line breaks */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space evenly between items */
 }
 
 .hourly-item {
-    flex: 0 0 auto;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10px;
-    color: white;
+    flex: 0 0 auto; /* Prevents the item from shrinking or growing */
+    width: 80px; /* Sets the width */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges items in a column */
+    align-items: center; /* Centers items horizontally */
+    margin-right: 10px; /* Adds margin to the right */
+    color: white; /* Sets the text color to white */
 }
 
 .hourly-item img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
+    width: 30px; /* Sets the width */
+    height: 30px; /* Sets the height */
+    margin-bottom: 5px; /* Adds margin at the bottom */
 }
 
 #hourly-heading {
-    color: #fff;
-    margin-top: 10px;
+    color: #fff; /* Sets the text color to white */
+    margin-top: 10px; /* Adds margin at the top */
 }

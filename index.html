@@ -2,24 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Sets the character encoding for the HTML document to UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page is responsive and sets the viewport to the device's width -->
     <title>Weather App</title>
+    <!-- Title of the webpage -->
     <link rel="stylesheet" href="./style.css">
+    <!-- Link to the external CSS stylesheet -->
 </head>
 <body>
     <div id="weather-container">
+        <!-- Container for the weather app content -->
         <h2>Weather App</h2>
-        <input type="text" id="city" placeholder="Enter city">
-        <button onclick="getWeather()">Search</button>
+        <!-- Header for the weather app -->
+        <div id="search-bar">
+            <!-- Container for the search bar inputs and button -->
+            <input type="text" id="city" placeholder="City">
+            <!-- Input field for the city name -->
+            <input type="text" id="province" placeholder="Province/State">
+            <!-- Input field for the province or state name -->
+            <input type="text" id="country" placeholder="Country">
+            <!-- Input field for the country name -->
+            <button onclick="getWeather()">Search</button>
+            <!-- Button to trigger the getWeather function when clicked -->
+        </div>
 
         <img id="weather-icon" alt="Weather Icon">
+        <!-- Image element to display the weather icon -->
 
         <div id="temp-div"></div>
+        <!-- Div to display the temperature -->
 
         <div id="weather-info"></div>
+        <!-- Div to display additional weather information -->
 
         <div id="hourly-forecast"></div>
+        <!-- Div to display the hourly forecast -->
     </div>
     <script src="./script.js"></script>
+    <!-- Link to the external JavaScript file -->
 </body>
 </html>
