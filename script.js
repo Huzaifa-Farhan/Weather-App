@@ -1,5 +1,5 @@
 function getWeather() {
-    const apiKey = 'e7b566277ab0b585ebe25cbaa59ac9ba'; // API key for OpenWeatherMap
+    const apiKey = 'api key goes here'; // API key for OpenWeatherMap
     const city = document.getElementById('city').value; // Get the city from the input field
     const province = document.getElementById('province').value; // Get the province from the input field
     const country = document.getElementById('country').value; // Get the country from the input field
